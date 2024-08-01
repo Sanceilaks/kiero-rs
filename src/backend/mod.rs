@@ -1,9 +1,9 @@
 #![allow(dead_code)]
 
 use winapi::{
-    shared::{ntdef::LPWSTR, windef::HWND},
+    shared::windef::HWND,
     um::winuser::{
-        CreateWindowExA, DefWindowProcW, DestroyWindow, RegisterClassExA, CS_HREDRAW, CS_VREDRAW, WNDCLASSEXA, WNDCLASSEXW, WS_OVERLAPPED
+        CreateWindowExA, DefWindowProcW, DestroyWindow, RegisterClassExA, CS_HREDRAW, CS_VREDRAW, WNDCLASSEXA, WS_OVERLAPPED
     },
 };
 
