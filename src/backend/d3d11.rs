@@ -86,7 +86,7 @@ pub fn initialize() -> Result<crate::VMTable, crate::error::KieroError> {
     };
     
     let mut feature_level: D3D_FEATURE_LEVEL = D3D_FEATURE_LEVEL_11_0;
-    let feature_levels: Vec<D3D_FEATURE_LEVEL> = vec![D3D_FEATURE_LEVEL_10_1, D3D_FEATURE_LEVEL_11_0];
+    let feature_levels: [D3D_FEATURE_LEVEL] = [D3D_FEATURE_LEVEL_10_1, D3D_FEATURE_LEVEL_11_0];
 
     let refresh_rate = DXGI_RATIONAL {
         Numerator: 60,
